@@ -17,13 +17,13 @@ class ArtisteSerializer(serializers.ModelSeializer):
     class Meta:
         fields = (
             "id",
-            "title",
-            "date_released",
-            "likes",
-            "artiste_id",
+            "first_name",
+            "last_name",
+            "age",
+            
             
         )
-        model = Song        
+        model = Artiste        
         
         
         
