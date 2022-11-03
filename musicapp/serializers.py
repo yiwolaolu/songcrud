@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from .models import Song, Artiste
 
-class SongSerializer(serializers.ModelSeializer):
+class SongSerializer(serializers.ModelSerializer):
     class Meta:
         fields = (
             "id",
@@ -13,7 +13,7 @@ class SongSerializer(serializers.ModelSeializer):
         )
         model = Song
         
-class ArtisteSerializer(serializers.ModelSeializer):
+class ArtisteSerializer(serializers.ModelSerializer):
     class Meta:
         fields = (
             "id",
